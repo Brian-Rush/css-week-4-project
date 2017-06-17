@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:900|Source+Sans+Pro:300,300italic,700);
+
+$heading-font: "Playfair Display", serif;
+$text-font: "Source Sans Pro", sans-serif;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $heading-font;
+  font-weight: 400;
+  color: $main-dark;
+}
+p,a,li,blockquote,figcaption {
+  font-family: $text-font;
+  font-weight: 300;
+  color: $main-dark;
+}

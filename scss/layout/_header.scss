@@ -1,0 +1,27 @@
+header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid $main-dark; 
+  .text {
+    width: calc(100% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    h1 {
+      font-size: 46px;
+      width: 100%;
+      text-align: center;
+      flex-shrink: 0;
+      border: 1px solid springgreen;
+      // flex-basis: 1;
+    }
+    h2 {
+      font-family: $text-font;
+      font-size: 24px;
+    }
+  }
+}
