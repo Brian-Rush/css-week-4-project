@@ -68,6 +68,20 @@ header .text h2 {
   font-size: 24px;
 }
 
+footer .social-links {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  width: 100%;
+}
+footer .social-links i {
+  height: 30px;
+  width: 30px;
+}
+footer p {
+  font-size: 8px;
+}
+
 .project-object {
   position: relative;
   display: flex;
