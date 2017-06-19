@@ -1,9 +1,11 @@
 $tablet-grid: (
   columns: 3,
   gutter: 10px,
+  media: 600px,
 );
 
 $desktop-grid: (
   columns: 5,
   gutter: 20px,
+  media: 900px,
 );

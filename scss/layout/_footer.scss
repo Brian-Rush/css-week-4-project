@@ -1,18 +1,29 @@
 footer {
+  background-color: $main-dark;
+  margin-top: 10px;
+  color: $main-light;
+  clear: both;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+
   .social-links {
     display: flex;
     justify-content: space-around;
+    align-content: center;
     height: 40px;
     width: 100%;
+    padding: 5px 0;
     i {
-      height: 30px;
-      width: 30px;
+      font-size: 30px;
+      color: $main-light;
     }
   }
   // @include grid-container;
   p {
     // @include grid-column(6);
     font-size: 8px;
+    color: $main-light;
   }
 
 }

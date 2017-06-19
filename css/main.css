@@ -9,10 +9,6 @@
   box-sizing: border-box;
 }
 
-*:not(a) {
-  border: 1px dashed red;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -39,6 +35,8 @@ nav ul li a {
 
 body {
   background-color: #F6F6F6;
+  min-height: 100vh;
+  position: relative;
 }
 
 header {
@@ -68,32 +66,103 @@ header .text h2 {
   font-size: 24px;
 }
 
+#positioner {
+  max-width: 1600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 900px) {
+  main {
+    width: calc(80% - 36px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+.project-object:last-of-type {
+  margin-bottom: 10px;
+  clear: both;
+}
+
+.last-row-fix {
+  height: 0;
+  flex-basis: 300px;
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+footer {
+  background-color: #282c34;
+  margin-top: 10px;
+  color: #F6F6F6;
+  clear: both;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
 footer .social-links {
   display: flex;
   justify-content: space-around;
+  align-content: center;
   height: 40px;
   width: 100%;
+  padding: 5px 0;
 }
 footer .social-links i {
-  height: 30px;
-  width: 30px;
+  font-size: 30px;
+  color: #F6F6F6;
 }
 footer p {
   font-size: 8px;
+  color: #F6F6F6;
+}
+
+#sidebar {
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  #sidebar {
+    width: calc(20% - 24px);
+    float: left;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+}
+#sidebar img {
+  object-fit: cover;
+  object-position: right;
+}
+#sidebar p {
+  margin-bottom: .9em;
+}
+#sidebar p:last-child {
+  margin-bottom: 0;
 }
 
 .project-object {
   position: relative;
   display: flex;
+  flex-basis: 300px;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
   border: 1px solid #282c34;
   padding: 2px;
-  margin: 10px 0;
+  margin: 10px;
   overflow: hidden;
 }
 .project-object img {
   transition: all 0.3s;
+  object-fit: cover;
 }
 .project-object:hover img {
   background-color: red;
@@ -114,6 +183,7 @@ footer p {
 }
 .project-object figcaption i {
   color: #F6F6F6;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,18 +1,22 @@
 .project-object {
   position: relative;
   display: flex;
+  flex-basis: 300px;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
   border: 1px solid $main-dark;
   padding: 2px;
-  margin: 10px 0;
+  margin: 10px;
   overflow: hidden;
+  // max-width: 600px;
   // & > a {
   //
   // }
   img {
     // max-width: 100%;
     transition: all 0.3s;
+    object-fit: cover;
   }
   &:hover img {
     background-color: red;
@@ -33,6 +37,7 @@
     color: $main-light;
     i {
       color: $main-light;
+      font-size: 30px;
     }
   }
 }
