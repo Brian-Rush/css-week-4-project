@@ -1,16 +1,18 @@
 #positioner {
+  display: block;
   max-width: 1600px;
+  min-height: 100vh;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto $footer-height auto;
 }
 
 main {
   display:flex;
-  // justify-content: space-around;
-  justify-content: flex-start;
+  justify-content: space-around;
+  // justify-content: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
-
+  margin-bottom: $footer-height;
   @include grid-media($desktop-grid) {
     @include grid-column (4, $desktop-grid);
 

@@ -5,5 +5,10 @@ $main-dark: #282c34;
 
 // breakpoints
 
-$bp-1: 600px;
-$bp-2: 900px;
+$bp-1: "only screen and (min-width: 600px)";
+$bp-2: "only screen and (min-width: 900px)";
+$bp-3: "only screen and (min-width: 1600px)";
+
+// dimensions
+
+$footer-height: 100px;

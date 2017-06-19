@@ -16,12 +16,26 @@ header {
       width: 100%;
       text-align: center;
       flex-shrink: 0;
-      border: 1px solid springgreen;
-      // flex-basis: 1;
     }
     h2 {
       font-family: $text-font;
       font-size: 24px;
+    }
+    @media #{$bp-1} {
+      h1 {
+        font-size: 80px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+    }
+    @media #{$bp-3} {
+      h1 {
+        font-size: 120px;
+      }
+      h2 {
+        font-size: 60px;
+      }
     }
   }
 }

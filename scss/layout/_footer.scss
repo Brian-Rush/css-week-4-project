@@ -4,7 +4,8 @@ footer {
   color: $main-light;
   clear: both;
   width: 100%;
-  position: relative;
+  height: $footer-height;
+  position: absolute;
   bottom: 0;
 
   .social-links {
@@ -25,5 +26,11 @@ footer {
     font-size: 8px;
     color: $main-light;
   }
-
+  // .copyright {
+  //   @include grid-column();
+  //   border: 1px solid red;
+  //    & > a {
+  //     color: $main-light;
+  //   }
+  // }
 }
